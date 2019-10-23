@@ -46,7 +46,7 @@ def gather_data(totalPages): # gathers the data of each player from each page
     totalCounter = 0
 
     for page in range(int(totalPages)): # for every page
-        url = f'https://www.futbin.com/20/pgp?page={page+1}&league=13&games=1000'
+        url = f'https://www.futbin.com/20/pgp?page={page+1}&league=13&games=1000' # change url accordingly
         r = rq.get(url, headers=headers)
         soup = BeautifulSoup(r.text, 'html.parser')
 
@@ -81,7 +81,7 @@ def gather_data(totalPages): # gathers the data of each player from each page
 
     return database
 
-first_page_soup = initial_scrape('https://www.futbin.com/20/pgp?page=1&league=13&games=1000')
+first_page_soup = initial_scrape('https://www.futbin.com/20/pgp?page=1&games=1000') # change url accordingly
 pages = find_pages(first_page_soup)
 final_database = gather_data(pages)
 
