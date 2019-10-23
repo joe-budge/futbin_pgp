@@ -5,7 +5,9 @@ A simple program to scrape the player-game-performance data from futbin.com, exp
 ## Getting Started
 
 Download the 'futbin_pgp.py' onto your machine.
+
 Replace the URL's with your desired URL (including search parameters) where noted
+
 Run 'futbin_pgp.py'
 
 ## Usage
@@ -16,6 +18,8 @@ Finding the most cost effective players in terms of performance output, find the
 ## Prerequisits
 
 Python modules:
+
 Pandas
+
 BeautifulSoup4
 
